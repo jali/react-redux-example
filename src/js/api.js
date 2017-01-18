@@ -1,6 +1,6 @@
 const eventData = require('../data/live.json');
 
-let api = {
+const api = {
   getLiveEvents() {
   	return eventData
   }
