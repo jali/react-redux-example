@@ -23,7 +23,7 @@ export default class Layout extends React.Component {
     const { data } = this.props;
      Object.keys(data).map((key, index) => {
       const { liveEvents } = data[key]
-        for (var {tournamentName: tn, teamA: {team: {player1: p1}}, teamB: {team: {player1: p2}}, startTime:{time: t} } of liveEvents) {
+        for (var { tournamentName: tn, teamA: {team: {player1: p1}}, teamB: {team: {player1: p2}}, startTime:{time: t} } of liveEvents) {
           let ukTime = moment(t, 'HH:mmZ').utcOffset(0).format('HH:mm')
           this.tournament.push(<li class="list-group-item"> 
             <div>
